@@ -9,7 +9,7 @@ using VidlyAppy.Models;
 
 namespace VidlyAppy.Controllers
 {
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         [OutputCache(Duration = 10)]
