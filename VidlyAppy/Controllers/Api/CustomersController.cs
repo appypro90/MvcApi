@@ -20,11 +20,16 @@ namespace VidlyAppy.Controllers.Api
         //GetAll api/Customers
         public IEnumerable<Customer> GetCustomers(string query = null)
         {
-            var customersQuery = _context.customers.Include("MembershipType")
+            
+            if (!string.IsNullOrWhiteSpace(query))
+            {
+              var  customersQuery = _context.customers.Include("MembershipType")
                 .Where(c => c.Name.Contains(query));
+                return customersQuery.ToList();
+            }
 
-
-            return customersQuery.ToList();
+            return _context.customers.Include("MembershipType").ToList();
+           
             
         }
 
