@@ -19,5 +19,14 @@ namespace VidlyAppy
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        //void Application_Error(object obj, EventArgs args)
+        //{
+        //    Exception ex = Server.GetLastError();
+        //    Server.ClearError();
+        //    Response.Redirect("/Home/Error");
+        //}
+
+
     }
 }

@@ -26,4 +26,6 @@ namespace VidlyAppy.Models
         public MembershipType MembershipType { get; set; }
         
     }
+
+  
 }

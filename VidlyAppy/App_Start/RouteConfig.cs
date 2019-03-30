@@ -19,7 +19,11 @@ namespace VidlyAppy
             //    "MovieReleasedByDate",
             //    "movie/ReleasedDate/{year}/{month}",
             //    new {controller = "Movie", action = "ReleasedDate" });
-
+            //routes.MapRoute(
+            //    name: "Error",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Error", id = UrlParameter.Optional }
+            //);
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
